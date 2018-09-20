@@ -20,8 +20,8 @@ void mystery1(auto& Data)
 	 
     for ( int j = 0 ; j < i ; j++)
     {
-	cout<<"I :- " <<i <<endl; 	
-    cout<<"J :- "<< j <<endl;
+	//cout<<"I :- " <<i <<endl; 	
+    //cout<<"J :- "<< j <<endl;
 	if ( Data[ i ] < Data[ j ] )
 		{swap( Data[ i ] , Data[ j ] );
 		
@@ -39,7 +39,7 @@ void mystery1(auto& Data)
 	cout<<endl<<"Mystery 2"<<endl<<"-------------------"<<endl;
 	for (int i = 0; i < Data.size() ; i++)
 	{
-			for (int j = 0; j < Data.size(); j++)
+			for (int j = 0; j < Data.size()-1; j++)
 			if (Data [j+1] < Data [j])
 				swap (Data[j+1], Data[j]);
 			print(Data);
